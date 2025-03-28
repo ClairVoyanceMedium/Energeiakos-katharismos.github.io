@@ -1,42 +1,100 @@
-# Indique aux robots que toutes les pages peuvent être explorées, sauf restrictions spécifiées
+# Αρχείο robots.txt βελτιστοποιημένο για το 2025 - Υπερβαίνει την αριστεία
+# Σχεδιασμένο για την ελληνική αγορά, ΤΝ, Google AI, φωνητικούς βοηθούς και προχωρημένο SEO
+# Ιστότοπος: https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/
+# Τελευταία ενημέρωση: 09/03/2025 14:00 GMT
+# Σημείωση: Δοκιμάστε με το Google Search Console και το robotstxt.org για επικύρωση
+
+##########################
+# Γενική Άδεια          #
+##########################
 User-agent: *
-Disallow: /admin/
-Disallow: /tmp/
+Disallow: /private/          # Ιδιωτικοί φάκελοι (π.χ. διαχείριση, scripts)
+Disallow: /temp/             # Προσωρινοί φάκελοι
+Disallow: /*?*               # Αποφυγή διπλού περιεχομένου (παράμετροι URL)
+Allow: /*.css$               # CSS για βέλτιστη απόδοση (κληρονομείται από όλους)
+Allow: /*.js$                # Βασικό JavaScript (κληρονομείται από όλους)
+Allow: /*.pdf$               # Επιτρέπονται στρατηγικά PDF (π.χ. οδηγοί)
+Allow: /                     # Προεπιλεγμένη άδεια
+
+########################################
+# Googlebot (συμπεριλαμβανομένου Google AI 2025) #
+########################################
+User-agent: Googlebot
+Disallow: /private/
+Disallow: /temp/
+Allow: /rituals/
+Allow: /protection/
+Allow: /energy-clearing/
+
+###########################################
+# Φωνητικοί βοηθοί                       #
+###########################################
+User-agent: Googlebot-Voice
+Disallow: /private/
+Disallow: /temp/
+Allow: /faq/
+Allow: /simple-rituals/
+Allow: /advice/
+User-agent: Amazonbot        # Υποθετικός για Alexa
+Disallow: /private/
+Disallow: /temp/
+Allow: /faq/
+Allow: /advice/
+User-agent: Applebot         # Υποθετικός για Siri
+Disallow: /private/
+Disallow: /temp/
+Allow: /faq/
+Allow: /advice/
+
+###########################################
+# Bing (ελληνική αγορά εκτός Google)      #
+###########################################
+User-agent: Bingbot
+Disallow: /private/
+Disallow: /temp/
+
+#################################
+# Αποκλεισμός ανεπιθύμητων robots #
+#################################
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+
+##################################################
+# Συνεργάτες και αναλυτές Google                #
+##################################################
+User-agent: Mediapartners-Google
+Disallow: /private/
+User-agent: AdsBot-Google
 Disallow: /private/
 
-# Bloquer des URL avec paramètres inutiles pour l'indexation
-Disallow: /*?debug=true
-Disallow: /*?preview=true
+##################################################
+# Αναδυόμενοι crawlers AI (πρόβλεψη 2025)       #
+##################################################
+User-agent: xAI-Crawler
+Disallow: /private/
+User-agent: OpenAI-Crawler
+Disallow: /private/
+User-agent: AnthropicBot
+Disallow: /private/
+User-agent: Qwantify         # Ελληνική αγορά
+Disallow: /private/
 
-# Permettre les fichiers nécessaires au bon affichage et fonctionnement
-Allow: /css/
-Allow: /js/
-Allow: /images/
+##################################################
+# Προχωρημένη βελτιστοποίηση (mobile-first)     #
+##################################################
+User-agent: Googlebot-Mobile
+Disallow: /private/
+Disallow: /temp/
+Allow: /rituals/
+Allow: /protection/
+Allow: /energy-clearing/
 
-# Référencement des ressources multimédias
-Allow: *.png
-Allow: *.jpg
-Allow: *.webp
-Allow: *.css
-Allow: *.js
-
-# Fournir le chemin du fichier sitemap pour une meilleure indexation
-Sitemap: https://www.clairvoyancemedium.com/sitemap.xml
-
-# Autorisation pour les robots Google et Bing pour maximiser les campagnes publicitaires
-User-agent: Googlebot
-Allow: /
-User-agent: AdsBot-Google
-Allow: /
-User-agent: Bingbot
-Allow: /
-
-# Bloquer les robots nuisibles ou non désirés
-User-agent: BadBot
-Disallow: /
-User-agent: EvilScraper
-Disallow: /
-
-# Empêcher l'exploration des fichiers sensibles
-Disallow: /config/
-Disallow: /backup/
+##################
+# Sitemap και crawl #
+##################
+Sitemap: https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/sitemap.xml
+Crawl-delay: 0.5
