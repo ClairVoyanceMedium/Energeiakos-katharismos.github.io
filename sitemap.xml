@@ -1,104 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
-        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
-        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
-    <!-- 🔥 Page d'accueil (Priorité maximale) -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Comment-retrouver-l-amour-rapidement.github.io/</loc>
-        <lastmod>2025-02-17</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-        <image:image>
-            <image:loc>https://clairvoyancemedium.github.io/images/homepage-main.jpg</image:loc>
-            <image:title>Retrouver l'Amour Rapidement</image:title>
-            <image:caption>Techniques puissantes pour attirer et garder l'amour.</image:caption>
-        </image:image>
-    </url>
+  <!-- Στοιχεία SEO Ultra-Performant για την ελληνική αγορά -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/</loc>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/en/"/>
+    <image:image>
+      <image:loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/images/energeiakos-katharismos-main.jpg</image:loc>
+      <image:title>Ενεργειακός Καθαρισμός - Frederick</image:title>
+      <image:caption>Επαγγελματικός ενεργειακός καθαρισμός και προστασία</image:caption>
+    </image:image>
+  </url>
 
-    <!-- 🔍 Pages principales -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Comment-retrouver-l-amour-rapidement.github.io/rituels-amour/</loc>
-        <lastmod>2025-02-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-        <image:image>
-            <image:loc>https://clairvoyancemedium.github.io/images/rituels-amour.jpg</image:loc>
-            <image:title>Rituels d'Amour Puissants</image:title>
-            <image:caption>Découvrez comment les rituels d’amour peuvent renforcer vos relations.</image:caption>
-        </image:image>
-    </url>
+  <!-- Σελίδες Υπηρεσιών με Βελτιστοποιημένα Μεταδεδομένα -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/rituals/</loc>
+    <lastmod>2025-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/images/rituals-optimized.jpg</image:loc>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/videos/rituals-preview.jpg</video:thumbnail_loc>
+      <video:title>Ενεργειακοί Τελετουργικοί Καθαρισμοί</video:title>
+      <video:description>Ισχυρές τελετές για ενεργειακό καθαρισμό</video:description>
+    </video:video>
+  </url>
 
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Comment-retrouver-l-amour-rapidement.github.io/voyance-email/</loc>
-        <lastmod>2025-02-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-        <image:image>
-            <image:loc>https://clairvoyancemedium.github.io/images/voyance-email.jpg</image:loc>
-            <image:title>Voyance par E-mail</image:title>
-            <image:caption>Posez vos questions à un voyant expérimenté par e-mail.</image:caption>
-        </image:image>
-    </url>
+  <!-- Σελίδες Γνώσης με Συντακτική Δομή -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/energy-clearing/</loc>
+    <lastmod>2025-03-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/energy-clearing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/en/energy-clearing/"/>
+  </url>
 
-    <!-- 🎥 Contenu Vidéo (avec ID réel de la vidéo) -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Comment-retrouver-l-amour-rapidement.github.io/videos/comment-seduire-vite/</loc>
-        <lastmod>2025-02-10</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <video:video>
-            <video:player_loc>https://www.youtube.com/watch?v=ABCD1234EFG</video:player_loc>
-            <video:thumbnail_loc>https://clairvoyancemedium.github.io/images/video-thumbnail.jpg</video:thumbnail_loc>
-            <video:title>Comment séduire rapidement</video:title>
-            <video:description>Découvrez les meilleures techniques pour séduire efficacement.</video:description>
-        </video:video>
-    </url>
+  <!-- Σελίδες FAQ με Σήμανση Schema.org -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/faq/</loc>
+    <lastmod>2025-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-    <!-- 📰 Articles Google News -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Comment-retrouver-l-amour-rapidement.github.io/news/nouvelle-technique-de-seduction/</loc>
-        <lastmod>2025-02-13</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.9</priority>
-        <news:news>
-            <news:publication>
-                <news:name>Voyance & Amour News</news:name>
-                <news:language>fr</news:language>
-            </news:publication>
-            <news:publication_date>2025-02-13</news:publication_date>
-            <news:title>Nouvelle Technique de Séduction Révélée</news:title>
-            <news:keywords>séduction, amour, relation</news:keywords>
-        </news:news>
-    </url>
+  <!-- Ιστοσελίδα Επικοινωνίας με Local SEO -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/contact/</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 
-    <!-- 📱 Page optimisée pour mobile -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Comment-retrouver-l-amour-rapidement.github.io/mobile/</loc>
-        <lastmod>2025-02-17</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.9</priority>
-        <mobile:mobile/>
-    </url>
+  <!-- Σελίδες Ιστολόγου με Δυναμικό Περιεχόμενο -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/blog/energeiakos-katharismos-oikogeneias/</loc>
+    <lastmod>2025-03-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/images/blog-family-cleaning.jpg</image:loc>
+    </image:image>
+  </url>
 
-    <!-- 📜 Pages légales -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Comment-retrouver-l-amour-rapidement.github.io/mentions-legales/</loc>
-        <lastmod>2025-01-10</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
+  <!-- Σελίδες Δοκιμών με Εναλλακτικές Γλώσσες -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/testimonials/</loc>
+    <lastmod>2025-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/testimonials/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/en/testimonials/"/>
+  </url>
 
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Comment-retrouver-l-amour-rapidement.github.io/cgv/</loc>
-        <lastmod>2025-01-10</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
+  <!-- Σελίδες Πληρωμών με Ασφάλεια -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/payment/</loc>
+    <lastmod>2025-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 
+  <!-- Σελίδες Πολιτικής με Νομική Σήμανση -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/privacy/</loc>
+    <lastmod>2025-03-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Σελίδες Βίντεο με Rich Snippets -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/videos/</loc>
+    <lastmod>2025-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <video:video>
+      <video:thumbnail_loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/videos/thumbnail.jpg</video:thumbnail_loc>
+      <video:title>Οδηγοί Ενεργειακού Καθαρισμού</video:title>
+      <video:description>Εκπαιδευτικά βίντεο για ενεργειακό καθαρισμό</video:description>
+    </video:video>
+  </url>
 </urlset>
