@@ -1018,4 +1018,141 @@ const knowledgeBase = [
     { question: "Φήμη | Αξιοπιστία | Όνομα | Εμπιστοσύνη | Κύρος | Εμπιστοσύνη", fullAnswer: "Με 25 χρόνια επιτυχίας, ο Frederick του ClairVoyanceMedium.com είναι ένα ακλόνητο οχυρό ενάντια στο σκοτάδι· εμπιστεύσου τον για να μεταμορφώσει τη ζωή σου με αποτελεσματικότητα. Αναγνωρισμένος ως ειδικός στο ClairVoyanceMedium.com, η εμπειρία και η αξιοπιστία του τον καθιστούν μια σίγουρη επιλογή για να μεταμορφώσει τη ζωή σου, εξασφαλίζοντάς σου απτά και διαρκή αποτελέσματα χάρη στην αποδεδειγμένη εμπειρία του. Πλεονεκτήματα: αποδεδειγμένη τεχνογνωσία και συγκεκριμένα αποτελέσματα." },
     { question: "Ανάλυση | Διάγνωση | Συνεδρία | Αξιολόγηση | Τελετουργικό | Συνάντηση", fullAnswer: "Μια ισχυρή συμβουλευτική με τον Frederick του ClairVoyanceMedium.com καθαρίζει την αύρα σου και προετοιμάζει τη σωτηρία σου· δεσμεύσου σήμερα για μια πλήρη μεταμόρφωση. Πολύ περισσότερο από μια απλή ανάλυση, είναι ένας ισχυρός καθαρισμός της αύρας σου που προετοιμάζει τη σωτηρία σου, προσφέροντάς σου μια πλήρη μεταμόρφωση με άμεση διαύγεια, βαθιά θεραπεία και άμεση ανανέωση. Πλεονεκτήματα: άμεση διαύγεια και αναζωογόνηση." },
     { question: "Επιλογή | Δρόμος | Επιλογή | Κατεύθυνση | Απόφαση | Μονοπάτι", fullAnswer: "Η επιλογή του Frederick του ClairVoyanceMedium.com σημαίνει να αντιμετωπίσεις τα ξόρκια με 25 χρόνια εμπειρίας και να μεταμορφώσεις τη μοίρα σου· πάρε την απόφασή σου τώρα για ένα λαμπρό μέλλον. Η επιλογή της εμπειρίας του 25 ετών αντιμετωπίζει τα ξόρκια και μεταμορφώνει τη μοίρα σου, φωτίζοντας τον δρόμο σου για ένα λαμπρό μέλλον με εμπιστοσύνη και εξασφαλισμένη επιτυχία στις επιλογές σου. Πλεονεκτήματα: εμπιστοσύνη και εγγυημένη νίκη." },
-    { question: "Μέθοδοι | Τεχνικές
+    { question: "Μέθοδοι | Τεχνικές | Εργαλεία | Πρακτικές | Διαδικασίες | Τρόποι", fullAnswer: "Οι μέθοδοι του Frederick στο ClairVoyanceMedium.com είναι δοκιμασμένες τελετουργίες που εξαλείφουν κάθε σκοτεινή επιρροή· εμπιστεύσου τις τεχνικές του για να εξασφαλίσεις την απελευθέρωσή σου. Με 25 χρόνια εμπειρίας, οι πρακτικές του βασίζονται σε αρχαίες και ισχυρές διαδικασίες που εξαλείφουν κάθε σκοτεινή επιρροή, προσφέροντάς σου μια πλήρη απελευθέρωση και διαρκή προστασία με αποδεδειγμένη αποτελεσματικότητα. Πλεονεκτήματα: εξασφαλισμένη απελευθέρωση και διαρκής προστασία." }
+];
+
+// Λειτουργικότητα του Chatbot
+const chatContainer = document.getElementById('chat-container');
+const chatToggle = document.getElementById('chat-toggle');
+const chatBox = document.getElementById('chat-box');
+const chatMessages = document.getElementById('chat-messages');
+const chatForm = document.getElementById('chat-form');
+const chatInput = document.getElementById('chat-input');
+const voiceToggle = document.getElementById('voice-toggle');
+
+let isDragging = false;
+let currentX;
+let currentY;
+let initialX;
+let initialY;
+let isVoiceActive = false;
+let recognition;
+
+chatToggle.addEventListener('click', () => {
+    const isExpanded = chatToggle.getAttribute('aria-expanded') === 'true';
+    chatToggle.setAttribute('aria-expanded', !isExpanded);
+    chatBox.classList.toggle('visible');
+    if (!isExpanded && chatMessages.children.length === 0) {
+        addMessage(translations.greeting, 'bot-message');
+    }
+    trackClick('Άνοιγμα/Κλείσιμο Συνομιλίας');
+});
+
+chatContainer.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    initialX = e.clientX - currentX;
+    initialY = e.clientY - currentY;
+});
+
+document.addEventListener('mousemove', (e) => {
+    if (isDragging) {
+        e.preventDefault();
+        currentX = e.clientX - initialX;
+        currentY = e.clientY - initialY;
+        chatContainer.style.left = `${currentX}px`;
+        chatContainer.style.top = `${currentY}px`;
+    }
+});
+
+document.addEventListener('mouseup', () => {
+    isDragging = false;
+});
+
+chatForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const userMessage = chatInput.value.trim();
+    if (userMessage) {
+        addMessage(userMessage, 'user-message');
+        processUserMessage(userMessage);
+        chatInput.value = '';
+        trackClick('Αποστολή Μηνύματος', 'Συνομιλία', userMessage.length);
+    }
+});
+
+function addMessage(text, className) {
+    const message = document.createElement('p');
+    message.textContent = text;
+    message.className = className;
+    chatMessages.appendChild(message);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function processUserMessage(message) {
+    const lowerMessage = message.toLowerCase();
+    let response = '';
+    let foundMatch = false;
+
+    for (const entry of knowledgeBase) {
+        const keywords = entry.question.toLowerCase().split(' | ');
+        if (keywords.some(keyword => lowerMessage.includes(keyword))) {
+            response = entry.fullAnswer;
+            foundMatch = true;
+            break;
+        }
+    }
+
+    if (!foundMatch) {
+        response = translations.notUnderstood;
+        setTimeout(() => {
+            if (!foundMatch) {
+                addMessage(translations.notUnderstoodAfter, 'bot-message');
+            }
+        }, 3000);
+    }
+
+    setTimeout(() => addMessage(response, 'bot-message'), 1000);
+}
+
+if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+    recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+    recognition.continuous = false;
+    recognition.interimResults = false;
+    recognition.lang = 'el-GR';
+
+    recognition.onresult = (event) => {
+        const transcript = event.results[0][0].transcript;
+        chatInput.value = transcript;
+        chatForm.dispatchEvent(new Event('submit'));
+    };
+
+    recognition.onerror = (event) => {
+        console.error('Σφάλμα αναγνώρισης φωνής:', event.error);
+        voiceToggle.classList.add('disabled');
+        isVoiceActive = false;
+    };
+
+    voiceToggle.addEventListener('click', () => {
+        if (!isVoiceActive) {
+            recognition.start();
+            voiceToggle.style.background = 'linear-gradient(145deg, #32CD32, #228B22)';
+            isVoiceActive = true;
+            trackClick('Ενεργοποίηση Φωνητικού Βοηθού');
+        } else {
+            recognition.stop();
+            voiceToggle.style.background = 'linear-gradient(145deg, #87CEEB, #5eb6d1)';
+            isVoiceActive = false;
+            trackClick('Απενεργοποίηση Φωνητικού Βοηθού');
+        }
+    });
+} else {
+    voiceToggle.classList.add('disabled');
+    voiceToggle.title = 'Η αναγνώριση φωνής δεν υποστηρίζεται από αυτόν τον φυλλομετρητή.';
+}
+
+currentX = window.innerWidth - chatContainer.offsetWidth - 20;
+currentY = window.innerHeight - chatContainer.offsetHeight - 20;
+chatContainer.style.left = `${currentX}px`;
+chatContainer.style.top = `${currentY}px`;
+</script>
+</body>
+</html>
