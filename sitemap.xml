@@ -1,113 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- Στοιχεία SEO Ultra-Performant για την ελληνική αγορά -->
+  <!-- Σελίδα Κύρια (Page principale) -->
   <url>
     <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/</loc>
-    <lastmod>2025-03-10</lastmod>
-    <changefreq>daily</changefreq>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="el" href="https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/en/"/>
     <image:image>
-      <image:loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/images/energeiakos-katharismos-main.jpg</image:loc>
-      <image:title>Ενεργειακός Καθαρισμός - Frederick</image:title>
-      <image:caption>Επαγγελματικός ενεργειακός καθαρισμός και προστασία</image:caption>
+      <image:loc>https://i.imgur.com/GmyGlKk.webp</image:loc>
+      <image:title>Λογότυπο της Τελετής Ενεργειακού Καθαρισμού και Προστασίας</image:title>
+      <image:caption>Εικόνα που αντιπροσωπεύει την κορυφαία υπηρεσία ενεργειακού καθαρισμού από απόσταση</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://i.imgur.com/KBYqPcf.webp</image:loc>
+      <image:title>Θεϊκή Τελετή Ενεργειακού Καθαρισμού</image:title>
+      <image:caption>Απεικόνιση της ισχυρής τελετής του Φρέντερικ για πνευματική απελευθέρωση</image:caption>
     </image:image>
   </url>
 
-  <!-- Σελίδες Υπηρεσιών με Βελτιστοποιημένα Μεταδεδομένα -->
+  <!-- Ενότητα: Σημασία του Ενεργειακού Καθαρισμού (Importance du désenvoûtement) -->
   <url>
-    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/rituals/</loc>
-    <lastmod>2025-03-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/#simasia-energeiakou-katharismou</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/images/rituals-optimized.jpg</image:loc>
-    </image:image>
-    <video:video>
-      <video:thumbnail_loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/videos/rituals-preview.jpg</video:thumbnail_loc>
-      <video:title>Ενεργειακοί Τελετουργικοί Καθαρισμοί</video:title>
-      <video:description>Ισχυρές τελετές για ενεργειακό καθαρισμό</video:description>
-    </video:video>
   </url>
 
-  <!-- Σελίδες Γνώσης με Συντακτική Δομή -->
+  <!-- Ενότητα: Γιατί να Επικαλεστείτε μια Τελετή (Pourquoi invoquer un rituel) -->
   <url>
-    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/energy-clearing/</loc>
-    <lastmod>2025-03-08</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/#giati-na-epikalesthite-mia-teleti</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Ενότητα: Οφέλη (Bénéfices) -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/#ofeli</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="el" href="https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/energy-clearing/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/en/energy-clearing/"/>
   </url>
 
-  <!-- Σελίδες FAQ με Σήμανση Schema.org -->
+  <!-- Ενότητα: Ανίχνευση Κατάρας (Détection de sortilège) -->
   <url>
-    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/faq/</loc>
-    <lastmod>2025-03-07</lastmod>
+    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/#anixneusi-kataras</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Ενότητα: Φρέντερικ (Frederick) -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/#frederick</loc>
+    <lastmod>2025-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Ιστοσελίδα Επικοινωνίας με Local SEO -->
+  <!-- Ενότητα: Μαντεία μέσω Email (Voyance par email) -->
   <url>
-    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/contact/</loc>
-    <lastmod>2025-03-06</lastmod>
+    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/#manteia-meso-email</loc>
+    <lastmod>2025-03-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
 
-  <!-- Σελίδες Ιστολόγου με Δυναμικό Περιεχόμενο -->
+  <!-- Ενότητα: Μαρτυρίες (Avis/Témoignages) -->
   <url>
-    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/blog/energeiakos-katharismos-oikogeneias/</loc>
-    <lastmod>2025-03-05</lastmod>
+    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/#martyries</loc>
+    <lastmod>2025-03-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Ενότητα: Διαδικασία (Procédure) -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/#diadikasia</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Στατικοί Πόροι (Ressources statiques) -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/favicon_optimized.png</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
     <image:image>
-      <image:loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/images/blog-family-cleaning.jpg</image:loc>
+      <image:loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/favicon_optimized.png</image:loc>
+      <image:title>Favicon του ClairvoyanceMedium</image:title>
+      <image:caption>Επίσημο εικονίδιο του κορυφαίου ιστότοπου ενεργειακού καθαρισμού</image:caption>
     </image:image>
   </url>
 
-  <!-- Σελίδες Δοκιμών με Εναλλακτικές Γλώσσες -->
   <url>
-    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/testimonials/</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="el" href="https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/testimonials/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/en/testimonials/"/>
-  </url>
-
-  <!-- Σελίδες Πληρωμών με Ασφάλεια -->
-  <url>
-    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/payment/</loc>
-    <lastmod>2025-03-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- Σελίδες Πολιτικής με Νομική Σήμανση -->
-  <url>
-    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/privacy/</loc>
-    <lastmod>2025-03-02</lastmod>
+    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/manifest.json</loc>
+    <lastmod>2025-03-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
-  <!-- Σελίδες Βίντεο με Rich Snippets -->
+  <!-- Πρόσθετοι Πόροι (Ressources additionnelles - polices critiques) -->
   <url>
-    <loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/videos/</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <video:video>
-      <video:thumbnail_loc>https://clairvoyancemedium.github.io/Energeiakos-katharismos.github.io/videos/thumbnail.jpg</video:thumbnail_loc>
-      <video:title>Οδηγοί Ενεργειακού Καθαρισμού</video:title>
-      <video:description>Εκπαιδευτικά βίντεο για ενεργειακό καθαρισμό</video:description>
-    </video:video>
+    <loc>https://clairvoyancemedium.github.io/Consultation_de_voyance_par_email_pas_chere.github.io/Cinzel-Regular.woff2</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
   </url>
+
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Consultation_de_voyance_par_email_pas_chere.github.io/PlayfairDisplay-Regular.woff2</loc>
+    <lastmod>2025-03-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
 </urlset>
